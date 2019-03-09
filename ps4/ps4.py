@@ -345,6 +345,8 @@ def apply_shifts(text, shifts):
     'JufYkaolfapxQdrnzmasmRyrpfdvpmEurrb?'
     """
     ### TODO.
+	assert shifts, 'no tuple (position, shift) in the shifts'
+	
     for i in range(len(shifts)):
         shifted_txt = text[:shifts[i][0]] + apply_shift(text[shifts[i][0]:], shifts[i][1])        
         text = shifted_txt
@@ -506,6 +508,7 @@ def decrypt_fable():
 decrypt_fable()
  
 #What is the moral of the story?
+
 """
 An Ingenious Man who had built a flying machine invited a great concourse of people to see it go up.
 at the appointed moment, everything being ready, he boarded the car and turned a a he power.
@@ -514,5 +517,5 @@ the aeronaut springing out barely in time to save himself. "well," said he, "i h
 the defects," he added, with a add hat the ruined brick work, "are merely basic and fundamental."
 upon this assurance the people came ox ward with subscriptions to build a second machine
 """
-
+#The moral of the story is - Never, ever give up! ;)
 
